@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #fff;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #08080a;
+    color: #fff;
+    padding: 15px 5px;
+    color: #707070;;
+}
+nav a{
+    text-decoration: none;
+    color: #707070;
+}
+.link {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 5px;
+    padding: 4px;
+}
+.link a {
+    padding: 10px 0px;
+}
+.link a:hover{
+    background: #08080a;
+    color: #fff;
+}
+.api{
+    display: flex;
+    flex-direction: column
+}
+.api h1 {
+    text-align: center;
+}
+.list-api{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 30px;
+    margin: 0 0 10px;
+}
+.list-api strong {
+    color: #4D5156;
+}
+.list-api a{
+    text-decoration: none;
+    color: #1a0dab;
+    font-size: 23px;
+}
+.list-api a:hover{
+    text-decoration: #660099;
+    color: #660099;
+}
+.list-api a:visited{
+    color: #660099;
+    font-size: 20px;
+}
+.list-api button{
+    background: #2C8BB8;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 100px;
+    margin: 16px;
+    color: #0000;
+    cursor: pointer;
+}
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+.search input{
+    border-radius: 15px;
+    padding: 8px;
+    border: none;
+    box-shadow: 3px 5px 10px #ccc;
+}
+/*Deputados List*/
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 30px;
+    margin: 0 0 10px;
+}
+.list strong {
+    color: #4D5156;
+}
+.list h4 {
+    margin: 4px 0px;
+}
+.list a{
+    text-decoration: none;
+    color: #1a0dab;
+    font-size: 23px;
+}
+.list a:hover{
+    text-decoration: #660099;
+    color: #660099;
+}
+.list a:visited{
+    color: #660099;
+    font-size: 20px;
+}
+.list button{
+    background: #2C8BB8;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    margin: 8px 0px;
+    width: 100px;
+    color: #0000;
+    cursor: pointer;
+}
