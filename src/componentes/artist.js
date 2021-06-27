@@ -1,19 +1,26 @@
 import React,{useState,useEffect} from 'react';
+import ArtistList from './artistList';
 
 function Artist(){
     const [data,setData] = useState([])
-    const [query,setQuery] = useState('')
+    const [loading,setLoading] = useState('')
     useEffect(async () => {
-        const request = await fetch(`https://dadosabertos.camara.leg.br/api/v2/deputados?nome=arthur&ordem=ASC&ordenarPor=nome`)
+        const request = await fetch('https://api.vagalume.com.br/hotspots.php?')
         const response = await request.json()
-        console.log(response);
-        //await setTimeout(() => setData(response.response.docs),1000)
+        await setTimeout(() => setData(response.hotspots),1000)
+        if(data.length == 0){
+            setTimeout(() => setLoading('Sem Resultados'),1000)
+            setLoading('Carregando...')
+        }
     },[])
     return(
-        <>
-        <div className='list-api'>
-            <input type="text" onChange={e => setQuery(e.target.value)}/>
+        <> 
+        <div className="api">
+           <h1>Novidades</h1> 
         </div>
+        <>
+            {data.length? data.map(hot => <ArtistList key={hot.id} hot={hot}/>) : <p>{loading}</p>}
+        </>
         
         </>
     )

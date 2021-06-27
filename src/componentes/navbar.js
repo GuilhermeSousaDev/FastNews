@@ -8,7 +8,7 @@ function Navbar(){
     const showPolitic = () => politic? setPolitic(false) : setPolitic(true)
     return(
         <nav>
-            <h1>Sneecss</h1>
+            <h1>Fast News</h1>
             <NavLink exact activeStyle={{background:'#fff'}} to="/">Tecnologia</NavLink> 
             <div onClick={showLinks} style={{cursor:'pointer'}}>Música         
                 {show? 

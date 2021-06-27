@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 body{
     background: #fff;
@@ -14,8 +16,9 @@ nav{
     color: #fff;
     padding: 15px 5px;
     color: #707070;;
+    font-family: 'Roboto', sans-serif;
 }
-nav a{
+nav a{ 
     text-decoration: none;
     color: #707070;
 }
@@ -36,7 +39,7 @@ nav a{
 }
 .api{
     display: flex;
-    flex-direction: column
+    flex-direction: column;   
 }
 .api h1 {
     text-align: center;
@@ -47,6 +50,9 @@ nav a{
     align-items: center;
     padding: 0px 0px 30px;
     margin: 0 0 10px;
+}
+.list-api h4{
+    font-family:sans-serif;
 }
 .list-api strong {
     color: #4D5156;
@@ -122,4 +128,7 @@ nav a{
     width: 100px;
     color: #0000;
     cursor: pointer;
+}
+@media screen and (max-width:587){
+
 }
