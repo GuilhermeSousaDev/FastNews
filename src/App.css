@@ -93,6 +93,16 @@ nav a{
     box-shadow: 3px 5px 10px #ccc;
 }
 /*Deputados List*/
+.deputado-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+.deputado-info a {
+    text-decoration: none;
+    color: #08080a;
+}
 .list{
     display: flex;
     justify-content: center;

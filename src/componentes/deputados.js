@@ -1,11 +1,12 @@
 import React,{useState,useEffect} from 'react';
 import DeputadosList from './deputadosList';
 import {ArrayContext} from './context'
+import DeputadoInfo from './deputadoInfo';
 
 function Deputado(){
     const [data,setData] = useState([])
     const [query,setQuery] = useState('')
-    const [loading,setLoading] = useState()
+    const [loading,setLoading] = useState('')
     useEffect(async () => {
         const request = await fetch(`https://dadosabertos.camara.leg.br/api/v2/deputados?nome=${query}&itens=50&ordem=ASC&ordenarPor=nome`)
         const response = await request.json()

@@ -6,6 +6,7 @@ import MusicApi from './componentes/musicApi';
 import Artist from './componentes/artist';
 import Deputado from './componentes/deputados';
 import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
+import DeputadoInfo from './componentes/deputadoInfo';
 
 function App(){
     return(    
@@ -16,8 +17,9 @@ function App(){
         <Route path="/music"><MusicApi/></Route>
         <Route path="/artist"><Artist/></Route>
         <Route path="/deputado"><Deputado/></Route>
+        <Route path="/deputadoinfo/:id"><DeputadoInfo/></Route>
         </Switch>
-       </Router>
+       </Router>   
     )
 }
 export default App;

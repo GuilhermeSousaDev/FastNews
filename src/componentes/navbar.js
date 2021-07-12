@@ -9,7 +9,7 @@ function Navbar(){
     return(
         <nav>
             <h1>Fast News</h1>
-            <NavLink exact activeStyle={{background:'#fff'}} to="/">Tecnologia</NavLink> 
+            <NavLink exact activeStyle={{background:'#fff',padding:'8px'}} to="/">Tecnologia</NavLink> 
             <div onClick={showLinks} style={{cursor:'pointer'}}>Música         
                 {show? 
                 <div className="link">
