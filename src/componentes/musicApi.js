@@ -17,7 +17,7 @@ function MusicApi(){
         <div className="api">
             <h1>Principais Notícias</h1>
             {data.length? 
-            data.map(music => <MusicList key={music.id} music={music}/>) : <p>{loading}</p>
+            data.map(music => <MusicList key={music.id} music={music}/>) : <p style={{textAlign:'center'}}>{loading}</p>
             }
         </div>
     )

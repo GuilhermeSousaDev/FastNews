@@ -1,7 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import DeputadosList from './deputadosList';
 import {ArrayContext} from './context'
-import DeputadoInfo from './deputadoInfo';
 
 function Deputado(){
     const [data,setData] = useState([])
@@ -17,13 +16,15 @@ function Deputado(){
         }
     },[query])
     return(
-        <ArrayContext.Provider value={{data}}>
+        <>
             <div className="search">
                 <input type="text" onChange={e => setQuery(e.target.value)} placeholder="Procurar Deputado"/>
             </div>
-            <DeputadosList/>     
+            <ArrayContext.Provider value={{data,setData}}>
+                <DeputadosList/>    
+            </ArrayContext.Provider>
             <p style={{textAlign:'center'}}>{loading}</p>
-        </ArrayContext.Provider>
+        </>
     )
 }
 

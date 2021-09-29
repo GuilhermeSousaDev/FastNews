@@ -26,7 +26,8 @@ function TecApi(){
         <div>
         <>
            {data.length? 
-              data.map(list => <PostsList key={list.id} list={list}/>) : <p>{loading}</p>
+              data.map(list => <PostsList key={list.id} list={list}/>) : 
+              <p style={{textAlign:'center'}}>{loading}</p>
            }
         </>
     </div>

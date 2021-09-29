@@ -19,7 +19,7 @@ function Artist(){
            <h1>Novidades</h1> 
         </div>
         <>
-            {data.length? data.map(hot => <ArtistList key={hot.id} hot={hot}/>) : <p>{loading}</p>}
+            {data.length? data.map(hot => <ArtistList key={hot.id} hot={hot}/>) : <p style={{textAlign:'center'}}>{loading}</p>}
         </>
         
         </>
