@@ -1,5 +1,6 @@
 import React from 'react';
-import './public/App.css'
+import '../public/App.css'
+import './p'
 import Navbar from './componentes/navbar';
 import TecApi from './componentes/tecApi';
 import MusicApi from './componentes/musicApi';
